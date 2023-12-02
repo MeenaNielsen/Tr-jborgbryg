@@ -1,0 +1,145 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrøjborgBryg</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- GOOGLE FONT (MONTSERRAT) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+</head>
+
+<body>
+    <header>
+        <!-- ---------------------Navbar----------------------- -->
+        <nav>
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo"><img src="img/logo1.png" alt="logo"></a>
+                <ul class="nav_links">
+                    <li><a href="index.html" class="active">Hjem</a></li>
+                    <li><a href="product.html">Produkt</a></li>
+                    <li><a href="sundhed.html">Sundhedmæssige</a></li>
+                    <li><a href="omos.html">Om</a></li>
+                    <li><a href="contact.html">Kontakt Os</a></li>
+                </ul>
+                <button class="nav_toggle-btn" id="nav_toggle-open"><i class="uil uil-bars"></i></button>
+                <button class="nav_toggle-btn" id="nav_toggle-close"><i class="uil uil-multiply"></i></button>
+            </div>
+        </nav>
+    </header>
+    <!-- ---------------------------Main container --------- -->
+    <section class="container">
+		
+			<div class="kontakform">
+				<p>Kontakt form</p>
+			</div>
+	<div class="form">
+			<form action="action_page.php" method="post">
+				<div class=" inner title">
+					<label for="title">Title:</label>
+	
+					<label for="Mr.">Mr.</label>
+					<input type="radio" id="Mr." name="title" value="Mr.">
+	
+					<label for="Mrs.">Mrs.</label>
+					<input type="radio" id="Mrs." name="title" value="Mrs.">
+	
+					<label for="teenager."> Between 13 and 19 years.</label>
+					<input type="radio" id="teenager." name="title" value="teenager.">
+	
+				</div><br>
+				<div class="inner name">
+					<label for="fName">First name:</label>
+					<input type="text" id="fname" name="fname" placeholder="Enter your first name" required>
+					<label for="lname">Last name:</label>
+					<input type="text" id="lname" name="lname" placeholder="Enter your last name" required>
+				</div><br>
+				<div class="inner address">
+					<label for="address">Address:</label>
+					<input type="text" id="address" name="address" placeholder="Enter your address" required>
+					<label for="pincode">Pin code:</label>
+					<input type="number" name="pincode" placeholder="Enter your pin code" required>
+				</div><br>
+				<div class="inner email">
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" placeholder="Enter your email" required>
+					<label for="phoneno">Phone no.:</label>
+					<input type="tel" id="phoneno" name="phoneno" placeholder="Enter your phone no." required>
+				</div><br>
+				<div class="inner consultationabout ">
+					<label for="consultationabout">consultation about:</label>
+					<select id="consultationabout" name="consultationabout">                   
+						<option value="" >Alcoholfree wine</option>
+						<option value="">Health</option>
+						<option value="">New product</option> 
+						<input type="text" style="width: 200px  maxlength="104" size="54" ><br>
+				  
+					</select><br>                
+				</div>
+				<div class="sdate">
+					<label for="sdate">Date:</label>
+					<input type="date" id="sdate" name="sdate" placeholder="Submit date" required>
+	
+				</div><br>
+				
+				<div class="subscribe">
+					<label for="subscribe">Subscribe</label>
+					<input type="checkbox" id="subscribe" name="subscribe">
+				</div>
+				<div class="reset">
+					<input type="reset">
+					<input type="submit">
+				</div>
+				
+	
+			</form>
+		</div>
+    </section>
+    <!-- -------------footer style------------ -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer">
+                <div class="footer-heading footer-1">
+                    <!-- <img class="footer-image"src="img/address.png" alt="Address"> -->
+                    <div class="footer-a">
+                        <h4>Contact us:</h4>
+                        <ul class="contul">
+                            <a href="">8Tordenskjoldsgade, Aarhus</a>
+                            <a href="">Denmark</a>
+                            <a href="">Phone no.+4567896789</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-heading footer-2 ">
+                    <div class="emailul">
+                        <h4>Join our newsletter</h4>
+                        <ul>
+                            <input type="email" placeholder="Enter your email address" id="footer-email"><br>
+                            <input type="submit" value="Sign up" id="footer-email-btn">
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-heading footer-3">
+                    <div class="footer-socialmedia">
+                        <h4>Social Media</h4><br>
+                        <ul class="socialmedia-ul">
+                            <a href=""><img class="socialmedia" src="img/facebookicon.jpg" alt="facebook"></a>
+                            <a href=""><img class="socialmedia" src="img/instgramicon.jpg" alt="instagram"></a>
+                            <a href=""><img class="socialmedia utube" src="img/youtube.png" alt="youtube"></a>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,420 @@
+:root {
+  --color-primary: hsla(72, 68%, 57%, 0.95);
+  --color-primary-variant: hsl(73, 18%, 16%);
+  --color-gradient: linear-gradient(
+    var(--color-primary) var(--color-primary-variant)
+  );
+  --color-white: white;
+  --color-black: black;
+  --container-width-lg: 80%;
+  --container-width-md: 92%;
+  /* ------for articles utility class------- */
+  --ff-heading: "Heebo", sans-serif;
+  --ff-body: "Oswald", sans-serif;
+  --clr-neutral-900: hsl(0 0% 0%);
+  --clr-neutral-100: hsl(0 0% 10%);
+  --clr-primary-400: hsla(70, 82%, 55%, 0.534);
+  --fs-xl: clamp(3rem, 1rem+10vw, 10rem);
+  --fs-600: 2rem;
+  --fs-500: 1.5rem;
+  --fs-400: 1.125rem;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body {
+  background: var(--color-gradient);
+  height: 600px;
+  width: 100%;
+}
+/* -------------------header and nav style */
+header {
+  background: var(--color-primary-400);
+}
+nav {
+  background: #00c3f4;
+  width: 100vw;
+  height: 4rem;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  left: 0;
+  box-shadow: 0 2rem 2rem rgb(20, 203, 235);
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+.nav-container {
+  width: var(--container-width-lg);
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_toggle-btn {
+  display: none;
+}
+.nav-logo {	
+  width: 5.4rem;
+  display: grid;
+  place-items: center;
+}
+.nav-logo img {
+  width: 98%;
+}
+.nav_links {
+  display: flex;
+  align-items: center;
+  gap: 4.5rem;
+  height: 100%;
+}
+.nav_links li {
+  height: 100%;
+}
+.nav_links li a {
+  color: var(--color-black);
+  font-weight: 500;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: color 400ms ease;
+  position: relative;
+}
+.nav_links li a:hover {
+  color: var(--color-primary);
+}
+.nav_links li a:active::after {
+  content: "";
+  display: block;
+  color: var(--color-primary);
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+/* --------------------Main section ------------------ */
+.main-container {
+  width: 99%;
+  height: 0 auto;
+  background-color: rgb(178, 236, 178);
+  margin: 1rem;
+  border: 1px 1px 2px 2px;
+}
+.main-container img {
+  width: 99%;
+  height: 20%;
+  margin-bottom: 0.5rem;
+  border: 1rem;
+}
+.cards {
+  width: 96%;
+  height: auto;
+  border: 2px 2px 2px 2px;
+  /* background:grey; */
+}
+
+#card img {
+  height: 12rem;
+}
+#card .p {
+  background-color: grey;
+  justify-content: center;
+  margin: 1px;
+  font-size: var(--fs-400);
+}
+/* --------------------Product------------- */
+.sundimg {
+  width: 18em;
+  height: 16em;
+  margin-left: 30%;
+  align-items:center;
+  justify-content: center;
+}
+.sundpara {
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-500);
+  margin: 2rem 1rem;
+}
+.article h1 {
+ /*  margin-left: 14%; */
+  font-size: var(--fs-600);
+  align-items: center;
+  justify-content: center;
+}
+
+/* ----------omos style--------- */
+
+/* .omos-main-image {
+	width: 20em;	
+	margin-left:20%;
+  } */
+.buttonom {
+  background: #00c3f4;
+  color: #9ba6a5;
+  width: 8rem;
+  height: 3rem;
+  margin: 2rem;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+/* ---------- footer style------------*/
+.footer-container {
+  background: #c0692bbc;
+  padding: 0rem 3rem 6rem 3rem;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+}
+.footer {
+  width: 100%;
+  height: 4vh;
+  display: flex;
+  flex-direction: row;
+  z-index: 2;
+  box-shadow: rgba(0, 0, 0, 0.2);
+  font-family: "Montserrat", sans-serif;
+  justify-content: space-between;
+  display: relative;
+  margin-top: 5px;
+}
+.footer-heading {
+  width: 5em;
+  display: flex;
+  font-size: small;
+  margin-bottom: 0.2rem;
+  font-weight: bold;
+}
+.footer1 {
+  justify-content: left;
+  align-items: left;
+}
+.footer-2 {
+  justify-content: center;
+  align-items: center;
+}
+.footer-3 {
+  justify-content: right;
+  align-items: right;
+}
+.contul {
+  padding-left: 2px;
+  font-size: x-small;
+}
+.contul input {
+  width: 2px;
+}
+
+.footer-heading a:hover {
+  color: rgba(255, 132, 0, 0.89);
+  transition: 0.3s ease-out;
+}
+#footer-email {
+  width: 150px;
+  height: 30px;
+  outline: none;
+  border: none;
+}
+.emailul {
+  padding-top: 39px;
+  font-size: var(--fs-xl);
+}
+#footer-email.btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 50px;
+}
+.footer-socialmedia h4 {
+  width: 109px;
+  height: 10px;
+  font-size: x-medium;
+}
+.footer-socialmedia a {
+  width: 4em;
+  padding: 0px 2px 5px 0px;
+}
+.socialmedia-ul {
+  width: 1rem;
+  flex-direction: row;
+  display: flex;
+}
+.footer-socialmedia img {
+  width: 3em;
+  height: 3em;
+  padding: 0px 2px 5px 0px;
+}
+/* ------kontact form style-------- */
+.kontakform p {
+  display: flex;
+  position: relative;
+  padding: 15px 10px 20px 20px;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--fs-400);
+}
+.form {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  padding: 15px 10px 20px 20px;
+  margin: 3rem 3rem;
+  width: 80%;
+}
+input[type="text"] {
+  width: 99%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.subscribe {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: flex-start;
+  margin-left: 20em;
+  background: rgba(9, 148, 166, 0.591);
+  width: 10rem;
+  height: 3rem;
+  flex-direction: column;
+  border-radius: 40%;
+}
+/* ---------------media query--------------------- */
+
+@media screen and (min-width: 760px) {
+  .nav-container {
+    width: var(--container-width-md);
+    position: relative;
+  }
+  .nav_links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-start;
+    display: none;
+  }
+  .nav_links li {
+    width: 100%;
+    box-shadow: -2rem 4rem 4rem rgba(0, 0, 0, 0.2);
+  }
+  .nav_links li a {
+    background: var(--color-white);
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 5rem 0 2.5rem;
+    border-top: 1px solid #00c3f4;
+  }
+  .nav_links li a.active::after {
+    display: none;
+  }
+  .nav_toggle-btn {
+    display: inline-block;
+    font-size: 2rem;
+    color: var(--color-black);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  #nav_toggle-close {
+    display: none;
+  }
+  /* ------------- section media query------ */
+  .main-container {
+    margin: 0.5rem;
+    padding: 1px;
+  }
+  
+  .cards {
+    width: 99%;
+    height: auto;
+    margin: 1px 4px;
+  }
+  #card {
+    height: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  } 
+  #card img {
+    height: 400px;
+  }
+  #card .p {
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+  }
+  /* -------------------------sundimg------- */
+  .container {
+    grid-template-columns: 1fr 1fr;
+    width: 99%;
+    height: 0 auto;
+    background-color: rgb(178, 236, 178);
+    margin: 0.5rem;
+    padding: 2em 10em;
+    border: 1px 1px 2px 2px;
+    align-items: center;
+    justify-content: center;
+  }
+  /* ------------------rooter-------------- */
+  .footer-container {
+    padding: 1rem 1rem 5rem 1rem;
+  }
+  .emailul {
+    padding-top: 3em;
+    padding-left: 0.5em;
+    border-radius: 25px;
+  }
+  h4 {
+    font-size: medium;
+  }
+  #footer-email {
+    display: inline-block;
+    font-size: 1rem;
+    color: var(--color-black);
+    border: none;
+    cursor: pointer;
+    width: 11em;
+    height: 1em;
+  }
+  #footer-email-btn {
+    width: 3rem;
+  }
+  .homesub {
+    padding: 0% 1% 4% 60%;
+    font-size: 25px;
+    font-style: italic;
+    position: absolute;
+    font-size: medium;
+  }
+  .homedes {
+    font-size: 25px;
+    font-style: italic;
+  }
+  .buttonhome {
+    margin: -28rem 0rem 2rem 2.5rem;
+    position: absolute;
+  }
+  /* --------------------form style----------- */
+  .form {
+    width: 98%;
+    padding: 1rem 1rem 5rem 15rem;
+    font-size:var(--fs-500);
+    margin: 10px 0px 0px 25px;
+  }
+ .kontakform p{
+	font-size: var(--fs-600);
+  }
+
+}
